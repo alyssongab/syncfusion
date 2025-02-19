@@ -11,24 +11,29 @@
     <header> <?php include('header.php') ?> </header>
 
     <h2>Componente Grid</h2>
-    <!-- Add the HTML <div> element for grid  -->
-    <div id="Grid"></div>
-    <script src="es5-datasource.js" type="text/javascript"></script>
-    <script>
-        ej.grids.Grid.Inject(ej.grids.Page);
-        var grid = new ej.grids.Grid({
-            dataSource: data,
-            columns: [
-                        { field: 'OrderID', headerText: 'ID Pedido', textAlign: 'Right', width: 120, type: 'number' },
-                        { field: 'CustomerID', width: 140, headerText: 'ID do Cliente', type: 'string' },
-                        { field: 'Freight', headerText: 'Frete', textAlign: 'Right', width: 120, format: 'C' },
-                        { field: 'OrderDate', headerText: 'Data do Pedido', width: 140, format: 'dd/MM/yyyy' }
-            ],
-            allowPaging: true,
-            pageSettings: { pageSize: 7 }
-        });
 
-        grid.appendTo('#Grid');
-    </script>
+      <!-- Add the HTML <div> element  -->
+      <div id="element">
+             <div class="e-tab-header">
+            <div> Grid 2 </div>
+            <div> Grid 3 </div>
+        </div>
+        <div class="e-content">
+            <div id="Grid">
+                <script src="es5-datasource.js" type="text/javascript"></script>
+                <script src="grid1.js"></script>
+            </div>
+            <div id="Grid2">
+                <script src="grid2.js"></script>
+            </div>
+        </div>
+         </div>
+
+        <script>
+          var tabObj = new ej.navigations.Tab();
+
+          //Render initialized Tab component
+          tabObj.appendTo('#element');
+        </script>
 </body>
 </html>
