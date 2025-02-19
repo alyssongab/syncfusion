@@ -1,2 +1,2 @@
-# extjs
-framework sencha - extjs
+# syncfusion
+framework ej2 - syncfusion
