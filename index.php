@@ -42,7 +42,9 @@
             </div>
 
             <script>
-            var tabObj = new ej.navigations.Tab();
+            var tabObj = new ej.navigations.Tab({
+                enablePersistence: true,
+            });
 
             //Render initialized Tab component
             tabObj.appendTo('#element');
