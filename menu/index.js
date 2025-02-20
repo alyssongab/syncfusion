@@ -6,7 +6,7 @@ ej.base.enableRipple(window.ripple)
 
     var menuTemplate = '<ul id="menu"></ul>';
     var searchTemplate = '<div class="e-input-group"><input class="e-input" type="text" placeholder="Search" /><span class="e-input-group-icon em-icons e-search"></span></div>';
-    var dropDownBtnTemplate = '<button id="userDBtn">Andrew</button>';
+    var dropDownBtnTemplate = '<button id="userDBtn">Alysson</button>';
 
     // Initialize Toolbar component
     new ej.navigations.Toolbar(
@@ -14,6 +14,7 @@ ej.base.enableRipple(window.ripple)
             created: create,
             items: [
                 { template: menuTemplate },
+                { type: 'Separator' }, // Adiciona um separador
                 { template: searchTemplate, align: 'right' },
                 { template: dropDownBtnTemplate, align: 'right' },
                 { prefixIcon: 'em-icons e-shopping-cart', align: 'right' },
