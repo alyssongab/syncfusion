@@ -30,7 +30,7 @@
     <div> <?php include('menu.php') ?> </div>
     
     <main>
-        <h2>Componente Grid</h2>
+        <h2>Master-Detail com Tabs</h2>
 
             <!-- Add the HTML <div> element  -->
             <div id="element">
@@ -43,7 +43,7 @@
                     <?php include('master.php') ?>
                 </div>
                 <div>
-                    <p class="teste">oi</p>
+                    <p class="teste">testando</p>
                 </div>
             </div>
             </div>
