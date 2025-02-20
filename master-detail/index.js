@@ -7,7 +7,6 @@ ej.base.enableRipple(window.ripple)
     
     var mastergrid = new ej.grids.Grid({
         dataSource: masterdata,
-    
         selectedRowIndex: 1,
         columns: [
             { field: 'ContactName', headerText: 'Customer Name', width: 150,},
@@ -15,7 +14,7 @@ ej.base.enableRipple(window.ripple)
             { field: 'Address', headerText: 'Address', width: 150 },
             { field: 'Country', headerText: 'Country', width: 130 }
         ],
-        rowSelected: rowSelected
+        rowSelected: rowSelected,
     });
     mastergrid.appendTo('#MasterGrid');
 

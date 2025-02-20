@@ -18,6 +18,10 @@
         main{
             padding: 10px;
         }
+        .teste{
+            padding: 10px;
+        }
+    
     </style>
 </head>
 <body>
@@ -38,8 +42,8 @@
                 <div id="masterdetail">
                     <?php include('master.php') ?>
                 </div>
-                <div id="Grid2">
-                    teste de tab
+                <div>
+                    <p class="teste">oi</p>
                 </div>
             </div>
             </div>
